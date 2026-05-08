@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝑩𝒂𝑫𝒓𝒐𝑶𝒐𝑳𝒂 | Links</title>
+    <style>
+        /* أنيميشن الألوان المتغيرة (RGB) */
+        @keyframes rgbColors {
+            0% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
+            33% { border-color: #9400d3; box-shadow: 0 0 15px #9400d3; }
+            66% { border-color: #0000ff; box-shadow: 0 0 15px #0000ff; }
+            100% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
+        }
+
+        @keyframes nameRGB {
+            0% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+            33% { color: #9400d3; text-shadow: 0 0 20px #9400d3; }
+            66% { color: #0000ff; text-shadow: 0 0 20px #0000ff; }
+            100% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000 url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExczNtNnRwbjQzOHkycnR3Zm5sd29weHF1cGNoZXVoNjd2ZXBxOHhnYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9WXMxuwNGwPBfw7okf/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            overflow: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            width: 100%;
+            max-width: 420px;
+            padding: 20px;
+        }
+
+        .profile-name {
+            font-size: 3.2rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+            animation: nameRGB 3s infinite linear;
+            font-family: 'Georgia', serif;
+        }
+
+        .links-container {
+            max-height: 60vh;
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+
+        /* تخصيص السكرول بار (شريط التمرير) */
+        .links-container::-webkit-scrollbar { width: 5px; }
+        .links-container::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+
+        .link-card {
+            display: block;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            color: white;
+            text-decoration: none;
+            margin: 12px 0;
+            padding: 16px;
+            border-radius: 50px;
+            border: 2px solid;
+            animation: rgbColors 3s infinite linear;
+            transition: 0.3s ease;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .link-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 25px white;
+        }
+
+        /* تصميم مشغل الموسيقى */
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(10, 10, 10, 0.9);
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 10;
+            width: 250px;
+            animation: rgbColors 5s infinite linear;
+        }
+
+        #album-art {
+            width: 45px;
+            height: 45px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .track-info { flex-grow: 1; text-align: left; }
+        .track-name { font-size: 0.8rem; font-weight: bold; color: white; margin: 0; }
+        .artist-name { font-size: 0.65rem; color: #777; margin: 0; }
+
+        .play-btn {
+            background: white;
+            border: none;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1 class="profile-name">𝑩𝒂𝑫𝒓𝒐𝑶𝒐𝑳𝒂</h1>
+        
+        <div class="links-container">
+            <a href="https://www.tiktok.com/@_badrola?is_from_webapp=1&sender_device=pc" class="link-card">TikTok </a>
+            <a href="https://discord.com/invite/badroolaa1234" class="link-card">Discord Profile </a>
+            <a href="https://discord.gg/5xJTJ4PAtc" class="link-card">Discord Server </a>
+            <a href="https://www.instagram.com/badrola1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="link-card">Instagram </a>
+            <a href="https://youtu.be/Xxg2ZmTEldg?si=u-VX316hh4IGx-Pp" class="link-card">YouTube </a>
+            <a href="https://kick.com/badrola" class="link-card">Kick Stream </a>
+            <a href="https://whatsapp.com/channel/0029VbCPS0h9MF8uxB0AwW1u" class="link-card">WhatsApp Channel </a>
+        </div>
+    </div>
+
+    <div class="music-player">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbGHpyFMvUGALsmdjXyCTF_wgDl3j0Zv_AbQ&s" id="album-art" alt="Art">
+        <div class="track-info">
+            <p class="track-name" id="song-title">flexin</p>
+            <p class="artist-name">MARAWAN PABLO</p>
+        </div>
+        <button class="play-btn" id="ctrlIcon" onclick="playPause()">▶</button>
+    </div>
+
+    <audio id="song">
+        <source src="https://files.catbox.moe/yc4r40.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        let song = document.getElementById("song");
+        let ctrlIcon = document.getElementById("ctrlIcon");
+
+        // تشغيل عند أول ضغطة في الموقع
+        document.body.addEventListener('click', function() {
+            if (song.paused) {
+                song.play();
+                ctrlIcon.innerText = "⏸";
+            }
+        }, { once: true });
+
+        function playPause() {
+            if (song.paused) {
+                song.play();
+                ctrlIcon.innerText = "⏸";
+            } else {
+                song.pause();
+                ctrlIcon.innerText = "▶
